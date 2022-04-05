@@ -1,0 +1,26 @@
+diff --git a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/inttypes.h b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/inttypes.h
+index 347787f..0b38b4f 100644
+--- a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/inttypes.h
++++ b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/inttypes.h
+@@ -7,7 +7,7 @@
+ #define PRId8        "hhd"
+ #define PRId16       "hd"
+ #define PRId32       "d"
+-#define PRId64       "lld"
++#define PRId64       "ld"
+ 
+ #define PRIu8        "hhu"
+ #define PRIu16       "hu"
+diff --git a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/stdint.h b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/stdint.h
+index dfc7507..338df7d 100644
+--- a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/stdint.h
++++ b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/utpm/deps/umock-c/inc/umock_c/aux_inc/stdint.h
+@@ -7,7 +7,7 @@
+ typedef signed char        int8_t;
+ typedef short              int16_t;
+ typedef int                int32_t;
+-typedef long long          int64_t;
++//typedef long long          int64_t;
+ typedef unsigned char      uint8_t;
+ typedef unsigned short     uint16_t;
+ typedef unsigned int       uint32_t;

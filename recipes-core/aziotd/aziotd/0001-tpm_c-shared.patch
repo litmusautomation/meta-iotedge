@@ -1,0 +1,28 @@
+diff --git a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/inc/aux_inc/stdbool.h b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/inc/aux_inc/stdbool.h
+index 025cd05..c6c2ebf 100644
+--- a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/inc/aux_inc/stdbool.h
++++ b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/inc/aux_inc/stdbool.h
+@@ -10,8 +10,8 @@
+ 
+ #ifndef __cplusplus
+ 
+-typedef unsigned char bool;
+-typedef bool _Bool;
++//typedef unsigned char bool;
++//typedef bool _Bool;
+ 
+ #define false	0
+ #define true	1
+diff --git a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/src/ctest.c b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/src/ctest.c
+index 8b72828..e8b09a7 100644
+--- a/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/src/ctest.c
++++ b/tpm/aziot-tpm-sys/azure-iot-hsm-c/deps/c-shared/testtools/ctest/src/ctest.c
+@@ -11,6 +11,8 @@
+ 
+ #include "ctest.h"
+ 
++#define SIZE_MAX __SIZE_MAX__
++
+ #if defined _MSC_VER && !defined(WINCE)
+ #include "windows.h"
+ #endif
